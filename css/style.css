@@ -31,7 +31,8 @@ body {
     color: inherit;
 }
 
-.link:hover {
+.link:hover 
+.link:focus {   
     color: var(--accent-color);
 }
 
