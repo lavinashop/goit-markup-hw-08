@@ -44,6 +44,9 @@ body {
     width: 200px;
     height: 50px;
     border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
 }
 
 .visually-hidden {
@@ -106,6 +109,9 @@ body {
 
    .contact-link {
     color: var(--secondary-font-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
    }
 
    /* Hero style */
@@ -128,7 +134,7 @@ color: var(--main-light);
   /* Advances styles */
 
   .advances-title {
-    line-height: 1.14;
+    line-height: 1.17;
     text-transform: uppercase;
   }
 
