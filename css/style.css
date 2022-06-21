@@ -104,6 +104,7 @@ body {
    .site-nav {
     display: flex;
     margin-left: 93px;
+    padding-left: 0;
 
 }
    .site-logo { 
