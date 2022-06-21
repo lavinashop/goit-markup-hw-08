@@ -253,7 +253,7 @@ color: var(--main-light);
 
   .section-command {
       background: var(--badge-background-color);
-      padding: 50px 0 94px;
+      padding: 94px 0 94px;
   }
 
   .command-block {
