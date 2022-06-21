@@ -420,3 +420,7 @@ font-size: 16px;
 line-height: 1.87;
 color: var(--secondary-font-color);
 }
+
+.foto-portfolio {
+    display: block;
+}
