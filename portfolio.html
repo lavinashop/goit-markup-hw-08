@@ -19,7 +19,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container main-header">
             <nav class="main-nav">
                 <a class="link site-logo" href="/index.html">Web<span class="site-logo-accent">Studio</span></a>
                 <ul class="site-nav list">
@@ -27,11 +27,19 @@
                   <li class="item"><a class="nav-link current" href="./portfolio.html">Портфолио</a></li>
                   <li class="item"><a class="nav-link" href="">Контакты</a></li>
                 </ul>
+            </nav>
            <ul class="auth-nav list">
-            <li class="item"><a class="contact-link" href="mailto:name@email.com">info@devstudio.com</a></li>
-            <li class="item"><a class="contact-link" href="tel:+380961111111">+38096 111 11 11</a></li>
+            <li class="item"><a class="contact-link" href="mailto:name@email.com">
+                <svg class="svg-email">
+                    <use href="./images/icons.svg#contacts-mail"></use>
+                  </svg>
+                info@devstudio.com</a></li>
+            <li class="item"><a class="contact-link" href="tel:+380961111111">
+                <svg class="svg-phone">
+                    <use href="./images/icons.svg#contacts-phone"></use>
+                  </svg>
+                +38096 111 11 11</a></li>
            </ul>
-        </nav>
         </div>
     </header>
     <main>
@@ -71,19 +79,46 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-logo">
-        <a class="link footer-site-logo" href="/index.html">Web<span class="footer-logo-accent">Studio</span></a>
-    </div>
-        <address>
-          <ul class="footer-block list">
-            <li><p class="footer-address"><a class="link" href="">г. Киев, пр-т Леси Украинки, 26</a></p></li>
-            <li class="footer-contacts"><a class="link" href="mailto:name@email.com">info@example.com</a></li>
-            <li class="footer-contacts"><a class="link" href="tel:+380961111111">+38096 111 11 11</a></li>
-          </ul>
-        </address>  
-    </div> 
-    </footer>
+        <div class="container footer-blocks">
+            <div class="logo-address">
+            <a class="link footer-site-logo" href="/index.html">Web<span class="footer-logo-accent">Studio</span></a>
+            <address>
+              <ul class="footer-block list">
+                <li><p class="footer-address"><a class="link" href="">г. Киев, пр-т Леси Украинки, 26</a></p></li>
+                <li class="footer-contacts"><a class="link" href="mailto:name@email.com">info@example.com</a></li>
+                <li class="footer-contacts"><a class="link" href="tel:+380961111111">+38096 111 11 11</a></li>
+              </ul>
+            </address> 
+            </div>  
+            <div class="social-blocks">
+            <p class="join">присоединяйтесь</p> 
+            <ul class="list social-icons">
+                <li class="list"><a class="icon-footer" href="https://www.instagram.com">
+                    <svg class="svg-footer">
+                        <use href="./images/icons.svg#icon-instagram3"></use>
+                    </svg>
+                </a></li>
+                <li class="list"><a class="icon-footer" href="https://www.twitter.com">
+                    <svg class="svg-footer">
+                        <use href="./images/icons.svg#icon-twitter3"></use>
+                    </svg>
+                </a></li>
+                <li class="list"><a class="icon-footer" href="https://www.facebook.com">
+                    <svg class="svg-footer">
+                        <use href="./images/icons.svg#icon-facebook3"></use>
+                    </svg>
+                </a></li>
+                <li class="list"><a class="icon-footer" href="https://www.linkedin.com">
+                    <svg class="svg-footer">
+                        <use href="./images/icons.svg#icon-linkedin3"></use>
+                    </svg>
+                </a></li>
+                
+                
+            </ul>
+            </div>  
+        </div>
+        </footer>
     
 </body>
 </html>
