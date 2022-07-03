@@ -719,11 +719,10 @@ background-color: var(--main-light);
 
 .modal-button {
     position: absolute;
-    top: 0;
     right: 0;
     width: 33px;
     height: 33px;
-    background-color: var(--main-light);
+    background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
 }
