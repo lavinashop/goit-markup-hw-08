@@ -723,8 +723,9 @@ background-color: var(--main-light);
     right: 0;
     width: 33px;
     height: 33px;
-    border: none;
-    background-color: none;
+    background-color: var(--main-light);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
 }
 
 .svg-modal {
