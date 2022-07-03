@@ -47,7 +47,7 @@
       <div class="container-hero"> 
         <div class="overlay">
         <h1 class="h1">Эффективные решения <br> для вашего бизнеса</h1>
-        <button class="button" type="button">Заказать услугу</button>
+        <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </div> 
     </div>
     </section>
@@ -94,9 +94,9 @@
     <div class="container">
     <h2 class="section-title">Чем мы занимаемся</h2>
     <ul class="activity-blocks list">
-        <li><a class="link" href="#"><img src="./images/img-6.jpg" width="370" alt="Пишем код"></a></li>
-        <li><a class="link" href="#"><img src="./images/img-5.jpg" width="370" alt="Создаем фронтенд"></a></li>
-        <li><a class="link" href="#"><img src="./images/img-4.jpg" width="370" alt="Подбираем цвет"></a></li>
+        <li><a href="#"><img src="./images/img-6.jpg" width="370" alt="Пишем код"></a></li>
+        <li><a href="#"><img src="./images/img-5.jpg" width="370" alt="Создаем фронтенд"></a></li>
+        <li><a href="#"><img src="./images/img-4.jpg" width="370" alt="Подбираем цвет"></a></li>
     </ul>
 </div>
 </section>
@@ -286,5 +286,17 @@
     </div>  
 </div>
 </footer>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <div class="button-overlay">
+        <button class="modal-botton" data-modal-close>
+            <svg class="svg-modal">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+        </button>
+    </div>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
