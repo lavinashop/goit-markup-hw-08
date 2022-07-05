@@ -192,6 +192,19 @@ body {
    .current {
     color: var(--accent-color);
    }
+   
+   .current::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    transform: scaleX(1);
+    transition: transform 250ms var(--timing-function);
+   }
 
    .nav-link::after {
     position: absolute;
@@ -210,10 +223,10 @@ body {
     transform: scaleX(1);
    }
 
-   .nav-link::after .current {
+   /*.nav-link::after .current {
     transform: scaleX(1);
     
-   }
+   }*/
 
    .contact-link {
     display: flex;
