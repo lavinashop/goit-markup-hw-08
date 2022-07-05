@@ -32,6 +32,7 @@ body {
 .link {
     text-decoration: none;
     color: inherit;
+    transition: color 250ms var(--timing-function);
 }
 
 .link:hover, 
@@ -51,6 +52,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+    transition: background-color 250ms var(--timing-function);
 }
 
 .button:hover,
@@ -169,7 +171,7 @@ body {
     margin-left: 50px;
 }
 
-   .nav-link {
+.nav-link {
     display: block;
     position: relative;
     padding-top: 32px;  
@@ -179,6 +181,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--main-font-color);
     text-decoration: none;
+    transition: color 250ms var(--timing-function);
    }
 
    .nav-link:hover, 
@@ -192,7 +195,6 @@ body {
 
    .nav-link::after {
     position: absolute;
-    left: 0;
     bottom: 0;
     content: "";
     display: block;
@@ -200,14 +202,17 @@ body {
     height: 4px;
     background-color: var(--accent-color);
     border-radius: 2px;
-    /*opacity: 0;*/
     transform: scaleX(0);
     transition: transform 250ms var(--timing-function);
-
    }
+
    .nav-link:hover::after {
-    /*opacity: 1;*/
     transform: scaleX(1);
+   }
+
+   .nav-link::after .current {
+    transform: scaleX(1);
+    
    }
 
    .contact-link {
@@ -220,6 +225,7 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition: color 250ms var(--timing-function);
    }
 
    .contact-link:hover,
@@ -417,6 +423,7 @@ text-align: center;
     height: 44px;
     border-radius: 50%; 
     color: var(--icon-grey);
+    transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
 .command-link:hover,
@@ -464,14 +471,16 @@ text-align: center;
     width: 170px;  
     height: 92px; 
     color: var(--icon-grey);
-    border: 1px solid #AFB1B8;
-   border-radius: 4px;
+    border: 1px solid var(--icon-grey);
+    border-radius: 4px;
+    transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
 }
 
 .company-link:hover,
 .company-link:focus {
-   border: 1px solid var(--accent-color);
-   border-radius: 4px;
+   color: var(--accent-color);
+   border-color: 1px solid var(--accent-color);
+ 
 }
 
 .company-icon {
@@ -479,12 +488,6 @@ text-align: center;
     height: 60px;
     fill: currentColor; 
     
-}
-
-.company-link:hover svg,
-.company-link:focus svg {
-    fill: var(--accent-color);
-
 }
 
 /* Footer styles */
@@ -563,6 +566,7 @@ margin-top: 20px;
     margin-right: 10px;
     background:  rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    transition: background-color 250ms var(--timing-function);
 }
 
 .icon-footer:hover,
@@ -594,16 +598,16 @@ margin-top: 20px;
 cursor: pointer;
 height: 38px;
 border: none;
-background: var(--badge-background-color);
+background-color: var(--badge-background-color);
 border-radius: 4px;
 padding: 6px 22px;
 margin-right: 8px;
-color: var(--footer-background-color);
 font-weight: 500;
 font-size: 16px;
 line-height: 26px;
 text-align: center;
 color: var(--main-font-color);
+transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 
 }
 
@@ -632,6 +636,7 @@ width: calc((100% - 60px) / 3);
 margin-right: 30px;
 margin-bottom: 30px;
 background: var(--main-light);
+transition: box-shadow 250ms var(--timing-function) ;
 }
 
 .container-bg:hover,
