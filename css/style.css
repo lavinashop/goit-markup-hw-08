@@ -206,7 +206,7 @@ body {
     transition: transform 250ms var(--timing-function);
    }
 
-   .nav-link::after {
+   /*.nav-link::after {
     position: absolute;
     bottom: 0;
     content: "";
@@ -217,13 +217,13 @@ body {
     border-radius: 2px;
     transform: scaleX(0);
     transition: transform 250ms var(--timing-function);
-   }
+   }*/
 
-   .nav-link:hover::after {
+   /*.nav-link:hover::after {
     transform: scaleX(1);
    }
 
-   /*.nav-link::after .current {
+   .nav-link::after .current {
     transform: scaleX(1);
     
    }*/
