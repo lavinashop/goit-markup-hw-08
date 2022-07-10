@@ -816,10 +816,34 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 }
 
+.policy-field {
+    margin-top: 20px;
+   text-align: center;
+}
+
 .modal-svg {
     position: absolute;
     width: 18px;
     height: 18px;
     left: 12px;
     top: 50%;
+   
+}
+
+.modal-button {
+    cursor: pointer;
+    margin: 30px auto 0;
+    display: block;
+    color: var(--main-light);
+    background-color: var(--accent-color);
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    transition: background-color 250ms var(--timing-function);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
