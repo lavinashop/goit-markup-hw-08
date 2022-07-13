@@ -559,6 +559,7 @@ color: rgba(255, 255, 255, 0.6);
 
 .social-blocks {
     padding-top: 12px;
+    margin-right: 93px;
 }
 .join {
     color: var(--main-light);
@@ -595,6 +596,64 @@ margin-top: 20px;
     fill: var(--main-light);
     width: 20px;
     height: 20px;
+}
+
+.subscribe-block {
+padding-top: 12px;
+}
+
+.subscribe-text {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--main-light);
+}
+
+.footer-email {
+margin-top: 20px;
+padding-left: 16px;
+width: 358px;
+height: 50px;
+background-color: transparent;
+border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+color: rgba(255, 255, 255, 0.6);
+
+}
+
+#footer-email::placeholder {
+color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-button {
+margin-left: 12px;
+width: 200px;
+height: 50px;
+background: var(--accent-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: 0;
+font-weight: 700;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.06em;
+color: var(--main-light);
+
+}
+
+.submit {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
+.svg-submit {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;  
 }
 
 /* Portfolio styles */
@@ -762,7 +821,7 @@ border-radius: 4px;
 
 .modal-cross:hover,
 .modal-cross:focus {
-    color: var(--accent-color);
+    fill: var(--accent-color);
 }
 
 .modal-form {
@@ -773,6 +832,11 @@ border-radius: 4px;
     width: 11px;
     height: 11px;
     fill: var(--main-dark);
+}
+
+.svg-modal:hover,
+.svg-modal:focus {
+    fill: var(--accent-color); 
 }
 
 .modal-h1 {
@@ -911,6 +975,7 @@ outline: var(--accent-color);
     background-color: var(--accent-color);
     border-radius: 2px;
     background-origin: border-box;
+    background-image:url(../images/icon-check.svg);
 }
 
 .agreement-text {
