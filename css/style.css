@@ -819,11 +819,6 @@ border-radius: 4px;
     border-radius: 50%;
 }
 
-.modal-cross:hover,
-.modal-cross:focus {
-    fill: var(--accent-color);
-}
-
 .modal-form {
     padding: 40px;
 }
@@ -832,6 +827,7 @@ border-radius: 4px;
     width: 11px;
     height: 11px;
     fill: var(--main-dark);
+    transition: fill 250ms var(--timing-function);
 }
 
 .svg-modal:hover,
@@ -870,6 +866,7 @@ width: 448px;
 height: 40px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
+transition: border-color 250ms var(--timing-function);
 
 }
 
@@ -899,6 +896,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.01em;
+transition: border-color 250ms var(--timing-function);
 
 }
 
@@ -922,6 +920,7 @@ outline: var(--accent-color);
     height: 18px;
     left: 12px;
     top: 50%;
+    transition: fill 250ms var(--timing-function);
    
 }
 
@@ -941,6 +940,7 @@ outline: var(--accent-color);
     transition: background-color 250ms var(--timing-function);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    transition: background-color 250ms var(--timing-function);
 }
 
 .modal-button:hover,
