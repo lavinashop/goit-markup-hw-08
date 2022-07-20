@@ -1,0 +1,46 @@
+body {
+    font-family: var(--main-font);
+    font-size: 14px;
+    color: var(--main-font-color);
+    background-color: var(--main-light);
+    letter-spacing: 0.03em;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 250ms var(--timing-function);
+
+ &:hover, 
+ &:focus {   
+    color: var(--accent-color);
+}
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+   margin-top: 0;   
+   margin-bottom: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    color: var(--main-font-color);
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+
+  }

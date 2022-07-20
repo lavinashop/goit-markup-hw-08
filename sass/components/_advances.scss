@@ -1,0 +1,43 @@
+.advances {
+    padding: 94px 0 47px;
+  }
+
+  .advances-blocks {
+    display: flex;
+    padding-left: 0;
+
+
+   &__item:not( :last-child) {
+      margin-right: 30px;
+   }
+
+   &__background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--badge-background-color);
+    border-radius: 4px;
+    }
+
+   &__icon {
+    width: 77px;
+    height: 77px;
+    
+   }
+
+   &__title {
+    font-size: 14px;
+    line-height: 1.17;
+    text-transform: uppercase;
+   }
+
+   &__text {
+      width: 270px;
+      margin-top: 10px;
+    line-height: 1.71;
+    color: var(--secondary-font-color);
+   }
+  }
