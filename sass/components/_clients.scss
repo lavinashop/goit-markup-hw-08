@@ -5,34 +5,56 @@
 
 .clients-links {
   // display: flex;
-   //justify-content: space-between;
+  // justify-content: space-between;
    margin-top: 50px;
    padding-left: 0;
 
    @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+   }
+   
+   @media screen and (min-width: 768px) {
      display: flex;
-    }
-    
-    @media screen and (min-width: 768px) {
-      display: flex;
-      width: 33,3%;
-    }
+     flex-wrap: wrap;
+     justify-content: space-between;
+     gap: 30px;
+   }
 
-    @media screen and (min-width: 480px) {
-      display: flex;
-      width: 50%;
-    }
+   @media screen and (min-width: 480px) {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     gap: 30px;
+   }
+  
+  
 
 &__link {
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 170px;  
+   //width: 170px;  
    height: 92px; 
    color: var(--icon-grey);
    border: 1px solid var(--icon-grey);
    border-radius: 4px;
    transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
+
+   @media screen and (min-width: 480px) {
+    width: 210px; 
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 226px; 
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px; 
+  }
+   
 }
 
 &__link:hover,
