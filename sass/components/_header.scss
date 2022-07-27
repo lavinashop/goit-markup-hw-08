@@ -4,20 +4,32 @@
 }
 
 .header-content  {
+  //  display: flex;
+
+  @media screen and (min-width: 1200px) {
     display: flex;
+    
+ }
         
 }
 
 .header-blocks {
-    display: flex;
+   // display: flex;
     align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
  
 }
-
+}
 .site-nav {
- display: flex;
+// display: flex;
  margin-left: 93px;
  padding-left: 0;
+
+ @media screen and (min-width: 1200px) {
+    display: flex;
+ }
 
 
 

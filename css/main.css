@@ -13,8 +13,10 @@
   --icon-grey: #AFB1B8;
   /*animation*/
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* grid items */
-  --indent: 30px;
+  /*adaptive*/
+  --mobile: 480px;
+  --tablet: 768px;
+  --desktop: 1200px;
 }
 
 .visually-hidden {
@@ -34,9 +36,23 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .hero__container {
@@ -110,27 +126,37 @@ img {
   border-bottom: 1px solid #ECECEC;
 }
 
-.header-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .header-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header-blocks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .header-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: 93px;
   padding-left: 0;
+}
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
@@ -266,10 +292,14 @@ img {
 }
 
 .advances-blocks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-left: 0;
+}
+@media screen and (min-width: 1200px) {
+  .advances-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 .advances-blocks__item:not(:last-child) {
   margin-right: 30px;
@@ -284,11 +314,23 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 270px;
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--badge-background-color);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .advances-blocks {
+    width: 270px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advances-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 354px;
+  }
 }
 .advances-blocks__icon {
   width: 77px;
@@ -309,6 +351,11 @@ img {
 .activity {
   padding-top: 47px;
   padding-bottom: 94px;
+}
+@media screen and (max-width: 767px) {
+  .activity {
+    display: none;
+  }
 }
 
 .activity-blocks {
@@ -347,13 +394,17 @@ img {
 }
 
 .command-blocks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 0;
+}
+@media screen and (min-width: 1200px) {
+  .command-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .command-card {
@@ -427,14 +478,31 @@ img {
 }
 
 .clients-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-top: 50px;
   padding-left: 0;
+}
+@media screen and (min-width: 1200px) {
+  .clients-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 33, 3%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .clients-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+  }
 }
 .clients-links__link {
   display: -webkit-box;
@@ -469,14 +537,30 @@ img {
   padding: 60px 0;
 }
 
-.footer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) {
+  .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer-content {
+    text-align: center;
+  }
 }
 
-.footer-about {
-  margin-right: 70px;
+@media screen and (min-width: 768px) {
+  .footer-about {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-about {
+    margin-right: 70px;
+  }
 }
 
 .footer-block {
@@ -501,7 +585,11 @@ img {
 
 .footer-social {
   padding-top: 12px;
-  margin-right: 93px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-right: 93px;
+  }
 }
 .footer-social__join {
   color: var(--main-light);
@@ -516,6 +604,13 @@ img {
   display: flex;
   padding-left: 0;
   margin-top: 20px;
+}
+@media screen and (max-width: 1199px) {
+  .footer-social__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .footer-social__link {
   display: -webkit-box;
@@ -547,6 +642,14 @@ img {
 .subscribe {
   padding-top: 12px;
 }
+@media screen and (max-width: 1199px) {
+  .subscribe__blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .subscribe__text {
   font-weight: 700;
   font-size: 14px;
@@ -558,7 +661,7 @@ img {
 .subscribe__email {
   margin-top: 20px;
   padding-left: 16px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -566,6 +669,11 @@ img {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__email {
+    width: 358px;
+  }
 }
 
 #footer-email::-webkit-input-placeholder {
@@ -898,8 +1006,6 @@ textarea {
 }
 
 .portfolio-card {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;

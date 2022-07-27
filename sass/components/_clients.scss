@@ -1,37 +1,51 @@
 .clients {
-    padding: 94px 0;
-   
+   padding: 94px 0;
+  
 }
 
 .clients-links {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    padding-left: 0;
+  // display: flex;
+   //justify-content: space-between;
+   margin-top: 50px;
+   padding-left: 0;
 
- &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;  
-    height: 92px; 
-    color: var(--icon-grey);
-    border: 1px solid var(--icon-grey);
-    border-radius: 4px;
-    transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
- }
-
- &__link:hover,
- &__link:focus {
-   color: var(--accent-color);
-   border-color: 1px solid var(--accent-color);
- 
- }
-
- &__icon {
-    width: 106px;
-    height: 60px;
-    fill: currentColor; 
+   @media screen and (min-width: 1200px) {
+     display: flex;
+    }
     
- }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      width: 33,3%;
+    }
+
+    @media screen and (min-width: 480px) {
+      display: flex;
+      width: 50%;
+    }
+
+&__link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 170px;  
+   height: 92px; 
+   color: var(--icon-grey);
+   border: 1px solid var(--icon-grey);
+   border-radius: 4px;
+   transition: color 250ms var(--timing-function), border-color 250ms var(--timing-function);
+}
+
+&__link:hover,
+&__link:focus {
+  color: var(--accent-color);
+  border-color: 1px solid var(--accent-color);
+
+}
+
+&__icon {
+   width: 106px;
+   height: 60px;
+   fill: currentColor; 
+   
+}
 } 

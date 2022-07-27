@@ -1,6 +1,11 @@
 .activity {
     padding-top: 47px;
     padding-bottom: 94px;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+      
+    }
   }
   
   .activity-blocks {
