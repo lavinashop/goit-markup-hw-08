@@ -20,10 +20,13 @@
 
 .footer-about {
    // margin-right: 70px;
+   @media screen and (min-width: 480px) {
+      margin-bottom: 60px;
+      }
 
-   @media screen and (min-width: 768px) {
-      margin-right: 165px;
-    }
+@media screen and (min-width: 768px) {
+   margin-right: 165px;
+   }
 
 
 @media screen and (min-width: 1200px) {
@@ -55,11 +58,13 @@
 } 
 
 .footer-social {
-    padding-top: 12px;
+    //padding-top: 12px;
     //margin-right: 93px;
+    margin-bottom: 60px;
 
     @media screen and (min-width: 1200px) {
       margin-right: 93px;
+      padding-top: 12px;
     }
 
  &__join {
@@ -106,7 +111,11 @@
 } 
 
 .subscribe {
- padding-top: 12px;
+ //padding-top: 12px;
+
+ @media screen and (min-width: 1200px) {
+   padding-top: 12px;
+ }
 
  &__blocks {
 
@@ -138,6 +147,10 @@
 
  @media screen and (min-width: 1200px) {
    width: 358px;
+  }
+
+  @media screen and (min-width: 480px) {
+   margin-bottom: 20px;
   }
 
  }
