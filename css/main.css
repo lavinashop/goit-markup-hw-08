@@ -211,6 +211,11 @@ img {
 .header-menu .header-menu.is-open {
   display: block;
 }
+@media screen and (max-width: 767px) {
+  .header-menu .header-menu.is-open {
+    display: none;
+  }
+}
 
 .header-blocks {
   display: -webkit-box;
