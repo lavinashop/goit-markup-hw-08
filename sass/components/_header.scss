@@ -33,11 +33,11 @@
 display: none;
 }
 
-&__button .is-open &__icon-close {
+&__button.is-open &__icon-close {
   display: block;
   } 
 
-&__button .is-open &__icon-menu {
+&__button.is-open &__icon-menu {
     display: none;
     } 
 
@@ -49,11 +49,9 @@ display: none;
  // display: flex;
   align-items: center;
   
-  .header-menu .is-open {
+  .header-menu.is-open {
     display: block;
-  }
-
-  @media screen and (max-width: 767px) {
+  //@media screen and (max-width: 767px) {
     position: absolute;
     top: 100%;
     left: 0;
