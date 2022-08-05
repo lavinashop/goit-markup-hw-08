@@ -208,11 +208,12 @@ img {
     margin-left: 93px;
   }
 }
+
 .header-menu.is-open {
   display: block;
 }
 @media screen and (max-width: 767px) {
- .header-menu.is-open {
+  .header-menu.is-open {
     display: none;
   }
 }
