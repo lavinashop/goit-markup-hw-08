@@ -63,12 +63,11 @@ display: none;
     }
   }
   .header-menu.is-open {
-      display: block;
+     // display: block;
     
      @media screen and (max-width: 767px) {
-      display: none;
+     display: block;
       }
-
     }
     
 
