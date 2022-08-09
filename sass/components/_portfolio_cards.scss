@@ -1,18 +1,24 @@
 .portfolio-blocks {
-    display: flex;
+  //  display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
     padding-left: 0;
     background-color: inherit;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
 }
 
 .portfolio-card {
    // box-sizing: border-box;
-    width: calc((100% - 60px) / 3);
+   // width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
     background: var(--main-light);
     transition: box-shadow 250ms var(--timing-function) ;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 60px) / 3); 
+    }
     
   &__container:hover,
   &__container:focus {
