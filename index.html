@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-    <!-- Шапка сайту -->
+    <!-- Header -->
 <header class="header">
     <div class="container header-content">
         <a class="link logo" href="/index.html">Web<span class="logo--black">Studio</span></a>
@@ -31,7 +31,7 @@
                 <use class="header-content__icon-menu" href="./images/icons.svg#icon-menu"></use>
               </svg>
         </button>
-        <!-- Меню -->
+        <!-- Menu -->
         <div class="header-menu" id="header-menu" data-menu>
         <nav>
         <ul class="site-nav list">
@@ -40,7 +40,7 @@
           <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
         </ul>
     </nav>
-    <!-- Котакти -->
+    <!-- Contacts -->
    <ul class="header-contact list">
     <li class="header-contact__item"><a class="header-contact__link header-contact__link--grey" href="mailto:name@email.com">
         <svg class="header-contact__icon-email">
@@ -63,7 +63,7 @@
 </div>
 </header>
 <main>
-    <!-- Герой -->
+    <!-- Hero -->
     <section class="hero">
       <div class="hero__container"> 
         <div class="hero__overlay">
@@ -72,7 +72,7 @@
         </div> 
     </div>
     </section>
-    <!-- Наші переваги -->
+    <!-- Advances -->
 <section class="advances">
     <div class="container">
     <h2 class="section-title visually-hidden">Наши приемущества</h2>
@@ -112,23 +112,32 @@
     </ul>
 </div>
 </section>
-<!-- Чим ми займаємось -->
+<!-- Activity -->
 <section class="activity">
     <div class="container">
     <h2 class="section-title">Чем мы занимаемся</h2>
     <ul class="activity-blocks list">
-        <li><a href="#"><div class="activity-blocks__overlay"><img src="./images/img-6.jpg" width="370" alt="Пишем код"><div class="activity-blocks__background"><p class="activity-blocks__text">Десктопные приложения</p></div></div></a></li>
-        <li><a href="#"><div class="activity-blocks__overlay"><img src="./images/img-5.jpg" width="370" alt="Создаем фронтенд"><div class="activity-blocks__background"><p class="activity-blocks__text">Мобильные приложения</p></div></div></a></li>
-        <li><a href="#"><div class="activity-blocks__overlay"><img src="./images/img-4.jpg" width="370" alt="Подбираем цвет"><div class="activity-blocks__background"><p class="activity-blocks__text">Дизайнерские решения</p></div></div></a></li>
+        <li><a href="#"><div class="activity-blocks__overlay"><img srcset="./images/img-6@1.jpg 1x, ./images/img-6@2.jpg 2x" src="./images/img-6-370.jpg" width="370" alt="Пишем код"><div class="activity-blocks__background"><p class="activity-blocks__text">Десктопные приложения</p></div></div></a></li>
+        <li><a href="#"><div class="activity-blocks__overlay"><img srcset="./images/img-5@1.jpg 1x, ./images/img-5@2.jpg 2x" src="./images/img-5-370.jpg" width="370" alt="Создаем фронтенд"><div class="activity-blocks__background"><p class="activity-blocks__text">Мобильные приложения</p></div></div></a></li>
+        <li><a href="#"><div class="activity-blocks__overlay"><img srcset="./images/img-4@1.jpg 1x, ./images/img-4@2.jpg 2x" src="./images/img-4-370.jpg" width="370" alt="Подбираем цвет"><div class="activity-blocks__background"><p class="activity-blocks__text">Дизайнерские решения</p></div></div></a></li>
     </ul>
 </div>
 </section>
-<!-- Наша команда -->
+<!-- Command -->
 <section class="command">
     <div class="container">
     <h2 class="section-title">Наша команда</h2>
     <ul class="command-blocks list">
-        <li class="command-card"><img src="./images/img.jpg" width="270" alt="Наш дизайнер"><div class="command-card__info"><h3 class="command-card__name">Игорь Демьяненко</h3>
+        <li class="command-card">
+            <img srcset="
+            ./images/img.jpg 270w, 
+            ./images/img-768@1.jpg 354w, 
+            ./images/img-480@1.jpg 450w, 
+            ./images/img-1200@2.jpg 540w, 
+            ./images/img-768@2.jpg 708w, 
+            ./images/img-480@2.jpg 900w"
+            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
+             src="./images/img.jpg" width="450" alt="Наш дизайнер"><div class="command-card__info"><h3 class="command-card__name">Игорь Демьяненко</h3>
         <p class="command-card__text">Product Designer</p>
             <ul class="command-socials">
             <li class="list"><a class="command-socials__link" href="https://www.instagram.com">
@@ -231,7 +240,7 @@
     </ul>
 </div>
 </section>
-<!-- Наші клієнти -->
+<!-- Clients -->
 <section class="clients">
     <div class="container">
     <h2 class="section-title">Постоянные клиенты</h2>
@@ -274,9 +283,9 @@
 <footer class="footer">
 <div class="container footer-content">
     <div class="footer-about">
-        <!-- Лого -->
+        <!-- Footer logo -->
     <a class="link logo" href="/index.html">Web<span class="logo--white">Studio</span></a>
-    <!-- Адреса -->
+    <!-- Address -->
     <address>
       <ul class="footer-block list">
         <li><p class="footer-block__address"><a class="link" href="">г. Киев, пр-т Леси Украинки, 26</a></p></li>
@@ -285,7 +294,7 @@
       </ul>
     </address> 
     </div>  
-    <!-- Соц мережі -->
+    <!-- Social networks -->
     <div class="footer-social">
     <p class="footer-social__join">присоединяйтесь</p> 
     <ul class="list footer-social__row">
@@ -311,7 +320,7 @@
         </a></li>   
     </ul>
     </div> 
-    <!-- Підписатись --> 
+    <!-- Subscribe --> 
 <div class="subscribe">
     <p class="subscribe__text">Подпишитесь на рассылку</p>
     <form class="subscribe__blocks">
@@ -325,7 +334,7 @@
 </div>
 </div>
 </footer>
-<!-- Модальне вікно -->
+<!-- Modal -->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button class="button-close" data-modal-close>
