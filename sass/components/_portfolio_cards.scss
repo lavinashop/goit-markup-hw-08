@@ -25,6 +25,7 @@
    // margin-bottom: 30px;
     background: var(--main-light);
     transition: box-shadow 250ms var(--timing-function) ;
+    
 
     @media screen and (min-width: 768px) {
       width: calc((100% - 30px) / 2);
@@ -34,8 +35,14 @@
       width: calc((100% - 60px) / 3); 
       margin-right: 30px;
       margin-bottom: 30px;
-      
     }
+
+    &:not( :last-child) {
+
+      @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+      }
+      }
     
   &__container:hover,
   &__container:focus {
