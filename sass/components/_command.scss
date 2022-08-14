@@ -1,6 +1,10 @@
 .command {
     background: var(--badge-background-color);
-    padding: 94px 0 94px;
+    padding: 60px 0 60px;
+
+    @media screen and (min-width: 1200px) {
+      padding: 94px 0 94px;
+    }
 }
 
 .command-blocks {
