@@ -23,6 +23,8 @@
    // width: calc((100% - 60px) / 3);
    // margin-right: 30px;
    // margin-bottom: 30px;
+   display: flex;
+   flex-direction: column;
     background: var(--main-light);
     transition: box-shadow 250ms var(--timing-function) ;
     
@@ -60,11 +62,19 @@
   margin-bottom: 0px;
   }
   }
+
+  &__link {
+  //  display: flex;
+  // flex-direction: column;
+  //  width: 100%;
+  //  height: 100%;
+  }
     
   &__container {
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
   border-top: 0;
+  flex-grow: 1;
   }
 
   &__title {
