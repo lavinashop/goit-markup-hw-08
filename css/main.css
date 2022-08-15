@@ -1187,6 +1187,7 @@ img {
   -webkit-transition: opacity 250ms var(--timing-function);
   transition: opacity 250ms var(--timing-function);
   overflow-y: scroll;
+  z-index: 1001;
 }
 
 .backdrop.is-hidden {
